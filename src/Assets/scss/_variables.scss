@@ -1,0 +1,87 @@
+//-------------------------------------------------container width option
+$container-xs  : 90%;
+$container-sm  : 768px;
+$container-md  : 992px;
+$container-lg  : 1170px;
+//-------------------------------------------------media queries options
+$screen-xs-min : 320px;
+$screen-sm-min : 768px;
+$screen-md-min : 992px;
+$screen-lg-min : 1170px;
+//-------------------------------------------------the grid
+$grid-columns: 12;
+$gutter: 20px;
+//-------------------------------------------------background color options
+
+$primary-color: #ffc425;
+$secondary-color: #0e3d51;
+$success-green: #0f9d58;
+$card-payment: #525a63;
+
+//-------------------------------------------------typography
+
+$font-family: 'Montserrat', sans-serif;
+
+// Base Font for HTML
+$base-font-size: 16px;
+
+// Paragraph Styles
+$paragraph-color      : #505050;
+$paragraph-size       : 16px;
+$paragraph-line-height: 1.5em;
+$paragraph-margin     : 20px;
+
+// Header Styles
+$header-color      : #000000;
+$header-size       : 40px;
+$header-line-height: 1.25em;
+$header-margin     : $paragraph-margin * 1.2;
+
+// Headers
+h1, h2, h3, h4, h5, h6 {
+    margin: $header-margin * 1.5 0 $header-margin 0;
+    color: $header-color;
+    font-family: $font-family;
+    line-height: $header-line-height;
+    font-weight: 400;
+    text-align:left;
+}
+
+h1 {
+    font-size: $header-size;
+}
+
+h2 {
+    font-size: $header-size / 1.3;
+}
+
+h3 {
+    font-size: $header-size / 1.5;
+}
+
+h4 {
+    font-size: $header-size / 1.7;
+}
+
+h5 {
+    font-size: $header-size / 1.8;
+}
+
+h6 {
+    font-size: $header-size / 2;
+}
+
+//-------------------------------------------------slider
+
+
+
+$color--green: #fff;
+$curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
+
+@mixin cf {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
